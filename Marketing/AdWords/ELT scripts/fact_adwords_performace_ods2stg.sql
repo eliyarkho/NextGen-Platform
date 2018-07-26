@@ -1,6 +1,6 @@
 
 BEGIN;
---test
+
 truncate stg.adwords.fact_adwords_performance;
 
 set start_time_range = (select nvl(max(snapshot_timestamp),to_date('1900-01-01'))
